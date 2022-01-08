@@ -28,6 +28,10 @@ enable :sessions
         erb(:play)
     end
 
+    # patch '/' do
+    #     .. modify something ..
+    #   end
+
      
 
     run! if app_file == $0

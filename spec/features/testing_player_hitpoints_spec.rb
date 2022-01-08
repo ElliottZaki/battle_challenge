@@ -2,10 +2,7 @@ feature "To see player's hitpoints" do
 
     scenario 'To see hitpoints' do
     #arrange
-    visit('/')
-    fill_in :player_1, with: 'Ellz'
-    fill_in :player_2, with: 'Mr K: 100HP'
-    click_on 'Submit' 
+    sign_in_and_play
     #assert
     expect(page).to have_content('Mr K: 100HP')
     end
